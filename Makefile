@@ -26,7 +26,6 @@ install:
 	sudo sed -i '/^Inherits/d' ${CUSTOM_PAPIRUS_THEME}/index.theme
 	sudo rm -Rf ${CUSTOM_PAPIRUS_THEME}/*/mimetypes
 
-
 	# clear icons cache
 	sudo gtk-update-icon-cache -q ${TARGET}
 	sudo gtk-update-icon-cache -q ${CUSTOM_ARC_THEME}
