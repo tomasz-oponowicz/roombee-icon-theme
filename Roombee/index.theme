@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Roombee
 Comment=A simple and modern icon theme.
-Inherits=Arc,Papirus,Adwaita,gnome,hicolor
+Inherits=Arc-Roombee,Papirus-Roombee,Adwaita,gnome,hicolor
 
 # Directory list
 Directories=16x16/apps24x24/apps,32x32/apps,48x48/apps,512x512/apps,16x16@2x/apps,24x24@2x/apps,32x32@2x/apps,48x48@2x/apps,512x512@2x/apps,scalable/apps
