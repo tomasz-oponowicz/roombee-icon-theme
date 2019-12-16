@@ -1,151 +1,106 @@
 [Icon Theme]
 Name=Roombee
-Comment=A simple and modern icon theme.
-Inherits=Arc-Roombee,Papirus-Roombee,Adwaita,gnome,hicolor
+Comment=A simple and modern icon theme based on Papirus and Adwaita.
+Inherits=Adwaita,gnome,hicolor
 
 # Directory list
-Directories=16x16/apps,24x24/apps,32x32/apps,48x48/apps,512x512/apps,16x16@2x/apps,24x24@2x/apps,32x32@2x/apps,48x48@2x/apps,512x512@2x/apps,scalable/apps,16x16/devices,24x24/devices,32x32/devices,48x48/devices,512x512/devices,16x16@2x/devices,24x24@2x/devices,32x32@2x/devices,48x48@2x/devices,512x512@2x/devices,scalable/devices
+Directories=apps/16x16,apps/22x22,apps/24x24,apps/32x32,apps/48x48,apps/64x64,apps/symbolic,mimetypes/16x16,mimetypes/22x22,mimetypes/24x24,mimetypes/32x32,mimetypes/48x48,mimetypes/64x64,mimetypes/96x96,mimetypes/256x256,mimetypes/512x512,mimetypes/scalable
 
 # Applications
 
-[16x16/apps]
+[apps/16x16]
 Context=Applications
 Size=16
 Type=Fixed
 
-[24x24/apps]
+[apps/22x22]
+Context=Applications
+Size=22
+Type=Fixed
+
+[apps/24x24]
 Context=Applications
 Size=24
 Type=Fixed
 
-[32x32/apps]
+[apps/32x32]
 Context=Applications
 Size=32
 Type=Fixed
 
-[48x48/apps]
+[apps/48x48]
 Context=Applications
 Size=48
 Type=Fixed
 
-[512x512/apps]
+[apps/64x64]
 Context=Applications
-Size=512
+Size=64
 MinSize=64
 MaxSize=512
 Type=Scalable
 
-[scalable/apps]
+[apps/symbolic]
 Context=Applications
 Size=16
 MinSize=16
 MaxSize=512
 Type=Scalable
 
-# Devices
+# Mime types
 
-[16x16/devices]
-Context=Devices
+[mimetypes/16x16]
+Context=MimeTypes
 Size=16
 Type=Fixed
 
-[24x24/devices]
-Context=Devices
+[mimetypes/22x22]
+Context=MimeTypes
+Size=22
+Type=Fixed
+
+[mimetypes/24x24]
+Context=MimeTypes
 Size=24
 Type=Fixed
 
-[32x32/devices]
-Context=Devices
+[mimetypes/32x32]
+Context=MimeTypes
 Size=32
 Type=Fixed
 
-[48x48/devices]
-Context=Devices
+[mimetypes/48x48]
+Context=MimeTypes
 Size=48
 Type=Fixed
 
-[512x512/devices]
-Context=Devices
+[mimetypes/64x64]
+Context=MimeTypes
+Size=64
+Type=Fixed
+
+[mimetypes/96x96]
+Context=MimeTypes
+Size=96
+Type=Fixed
+
+[mimetypes/256x256]
+Context=MimeTypes
+Size=256
+MinSize=56
+MaxSize=256
+Type=Scalable
+
+[mimetypes/512x512]
+Context=MimeTypes
 Size=512
-MinSize=64
+MinSize=56
 MaxSize=512
 Type=Scalable
 
-[scalable/devices]
-Context=Devices
+[mimetypes/scalable]
+Context=MimeTypes
 Size=16
-MinSize=16
-MaxSize=512
-Type=Scalable
-
-#
-# HiDPi @2x scale
-#
-
-# Applications
-
-[16x16@2x/apps]
-Context=Applications
-Scale=2
-Size=16
-Type=Fixed
-
-[24x24@2x/apps]
-Context=Applications
-Scale=2
-Size=24
-Type=Fixed
-
-[32x32@2x/apps]
-Context=Applications
-Scale=2
-Size=32
-Type=Fixed
-
-[48x48@2x/apps]
-Context=Applications
-Scale=2
-Size=48
-Type=Fixed
-
-[512x512@2x/apps]
-Context=Applications
-Scale=2
-Size=512
-MinSize=64
-MaxSize=512
-Type=Scalable
-
-# Devices
-
-[16x16@2x/devices]
-Context=Devices
-Scale=2
-Size=16
-Type=Fixed
-
-[24x24@2x/devices]
-Context=Devices
-Scale=2
-Size=24
-Type=Fixed
-
-[32x32@2x/devices]
-Context=Devices
-Scale=2
-Size=32
-Type=Fixed
-
-[48x48@2x/devices]
-Context=Devices
-Scale=2
-Size=48
-Type=Fixed
-
-[512x512@2x/devices]
-Context=Devices
-Scale=2
-Size=512
-MinSize=64
+MinSize=8
 MaxSize=512
 Type=Scalable

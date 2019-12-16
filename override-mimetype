@@ -1,0 +1,25 @@
+#!/bin/bash -xu
+
+MIMETYPE_NAME=$1
+
+create_link() {
+  SIZE=$1
+  TYPE=${2:-png}
+
+  GENERIC_NAME=text-x-preview.$TYPE
+  GENERIC_PATH=Roombee/mimetypes/$SIZE/$GENERIC_NAME
+  if [ -f $GENERIC_PATH ]; then
+  	ln -s $GENERIC_NAME Roombee/mimetypes/$SIZE/$MIMETYPE_NAME.$TYPE
+  fi
+}
+
+create_link 16x16
+create_link 22x22
+create_link 24x24
+create_link 32x32
+create_link 48x48
+create_link 64x64
+create_link 96x96
+create_link 256x256
+create_link 512x512
+create_link scalable svg

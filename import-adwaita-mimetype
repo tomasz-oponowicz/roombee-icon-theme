@@ -1,0 +1,20 @@
+#!/bin/bash -xu
+
+MIMETYPE_NAME=$1
+
+import_icon() {
+  SIZE=$1
+  TYPE=${2:-png}
+  cp /usr/share/icons/Adwaita/$SIZE/mimetypes/$MIMETYPE_NAME.$TYPE Roombee/mimetypes/$SIZE
+}
+
+import_icon 16x16
+import_icon 22x22
+import_icon 24x24
+import_icon 32x32
+import_icon 48x48
+import_icon 64x64
+import_icon 96x96
+import_icon 256x256
+import_icon 512x512
+import_icon scalable svg

@@ -1,0 +1,16 @@
+#!/bin/bash -xu
+
+APP_NAME=$1
+
+import_icon() {
+  SIZE=$1
+  cp /usr/share/icons/Papirus/$SIZE/apps/$APP_NAME.svg Roombee/apps/$SIZE
+}
+
+import_icon 16x16
+import_icon 22x22
+import_icon 24x24
+import_icon 32x32
+import_icon 48x48
+import_icon 64x64
+import_icon symbolic
