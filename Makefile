@@ -1,17 +1,12 @@
-ICONS=/usr/share/icons
 NAME=Roombee
-SOURCE=${NAME}
-TARGET=${ICONS}/${SOURCE}
+TARGET=/usr/share/icons
 
 install:
 
 	# remove previous installation
-	sudo rm -Rf ${TARGET}
+	rm -Rf ${TARGET}/${NAME}
 
 	# copy Roombee theme
-	sudo cp -r ${SOURCE} ${ICONS}
-
-	# clear icons cache
-	sudo gtk-update-icon-cache -q ${TARGET}
+	cp -r ${NAME} ${TARGET}
 
 .PHONY: install
