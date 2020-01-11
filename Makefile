@@ -1,12 +1,9 @@
-NAME=Roombee
-TARGET=/usr/share/icons
+PREFIX ?= /usr
 
 install:
 
-	# remove previous installation
-	rm -Rf ${TARGET}/${NAME}
+	mkdir -p $(DESTDIR)$(PREFIX)/share/icons
+	cp -R Roombee $(DESTDIR)$(PREFIX)/share/icons
 
-	# copy Roombee theme
-	cp -r ${NAME} ${TARGET}
 
 .PHONY: install
