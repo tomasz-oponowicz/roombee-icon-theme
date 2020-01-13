@@ -4,7 +4,7 @@ Comment=A simple and modern icon theme based on Papirus and Adwaita.
 Inherits=Adwaita,gnome,hicolor
 
 # Directory list
-Directories=apps/16x16,apps/22x22,apps/24x24,apps/32x32,apps/48x48,apps/64x64,apps/symbolic,mimetypes/16x16,mimetypes/22x22,mimetypes/24x24,mimetypes/32x32,mimetypes/48x48,mimetypes/64x64,mimetypes/96x96,mimetypes/256x256,mimetypes/512x512,mimetypes/scalable
+Directories=apps/16x16,apps/22x22,apps/24x24,apps/32x32,apps/48x48,apps/64x64,apps/512x512,apps/symbolic,mimetypes/16x16,mimetypes/22x22,mimetypes/24x24,mimetypes/32x32,mimetypes/48x48,mimetypes/64x64,mimetypes/96x96,mimetypes/256x256,mimetypes/512x512,mimetypes/scalable
 
 # Applications
 
@@ -36,6 +36,13 @@ Type=Fixed
 [apps/64x64]
 Context=Applications
 Size=64
+MinSize=64
+MaxSize=512
+Type=Scalable
+
+[apps/512x512]
+Context=Applications
+Size=512
 MinSize=64
 MaxSize=512
 Type=Scalable

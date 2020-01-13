@@ -1,0 +1,15 @@
+#!/bin/bash -xu
+
+PAPER_APP_NAME=$1
+ROOMBEE_APP_NAME=$2
+
+import_icon() {
+  SIZE=$1
+  cp /usr/share/icons/Paper/$SIZE/apps/$PAPER_APP_NAME.png Roombee/apps/$SIZE/$ROOMBEE_APP_NAME.png
+}
+
+import_icon 16x16
+import_icon 24x24
+import_icon 32x32
+import_icon 48x48
+import_icon 512x512
